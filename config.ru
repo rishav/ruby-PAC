@@ -1,4 +1,4 @@
 use Rack::ContentLength
-app = lambda { |env| [200, { 'Content-Type' => 'text/html' }, 'Hello World'] }
+require 'my_app'
 
-run app
+run MyApp.new
